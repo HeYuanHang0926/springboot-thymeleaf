@@ -14,4 +14,8 @@ public class ThController {
     public void show(){
         System.out.println("测试");
     }
+     public void hello(){
+         System.out.println("hot-fix");
+     }
+
 }
