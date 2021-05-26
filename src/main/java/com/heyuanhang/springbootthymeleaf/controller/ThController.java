@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class ThController {
-
-
+    public void show(){
+        System.out.println("测试");
+    }
 }
