@@ -18,4 +18,7 @@ public class ThController {
          System.out.println("hot-fix");
      }
 
+     public void show1(){
+         System.out.println("测试gitHub push");
+     }
 }
