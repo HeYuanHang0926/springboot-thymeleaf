@@ -21,4 +21,7 @@ public class ThController {
      public void show1(){
          System.out.println("测试gitHub push");
      }
+    public void show2(){
+         System.out.println("测试gitHub pull");
+     }
 }
