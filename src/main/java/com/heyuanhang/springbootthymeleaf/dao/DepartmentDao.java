@@ -21,11 +21,20 @@ public class DepartmentDao {
 		departments.put(104, new Department(104, "测试部"));
 		departments.put(105, new Department(105, "运维部"));
 	}
-	
+
+	/**
+	 * 获取所有的部门
+	 * @return
+	 */
 	public Collection<Department> getDepartments(){
 		return departments.values();
 	}
-	
+
+	/**
+	 * 根据key获得部门信息
+	 * @param id key
+	 * @return
+	 */
 	public Department getDepartment(Integer id){
 		//根据key获得部门信息
 		return departments.get(id);

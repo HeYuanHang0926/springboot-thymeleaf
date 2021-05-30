@@ -17,7 +17,10 @@ import javax.servlet.http.HttpSession;
 public class UserController {
     @PostMapping("/login")
     public String login(String username, String password, Model  model, HttpSession session1){
-     if (username!=null&&password.equals("123")){
+        /**
+         * 当用户名不为空和密码未123时登录成功
+         */
+        if (username!=null&&password.equals("123")){
          //装进session
          session1.setAttribute("user",username);
          return "redirect:/main.html";

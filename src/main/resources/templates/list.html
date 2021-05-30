@@ -126,16 +126,19 @@
             }
         }
     });
-
     //点击删除的触发函数
     function Delete(id) {
         //发送ajax请求
         $.ajax({
+            //请求路径
             url: '/emp/' + id,
+            //请求方式
             type: "delete",
+            //期待返回的数据类型
             dataType: "json",
             contentType: 'application/json;charset=UTF-8',
             success: function (resp) {
+                //动态的移除数据，时间为2秒
                    $("#del_tr"+id).fadeOut(2000);
             }
         });
